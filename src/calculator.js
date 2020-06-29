@@ -1,6 +1,8 @@
 class Calculator {
   sum(numbers) {
-    return null
+    return numbers.reduce((acc, number) => {
+      return acc += number
+    }, 0)
   }
 
   subtract(numbers) {
