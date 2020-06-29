@@ -1,5 +1,5 @@
-const Calc = require('./calc')
-const calc = new Calc()
+const Calculator = require('./calculator')
+const calc = new Calculator()
 
 describe('Testes para calculadora', () => {
   it('Deve retornar 10 quando somarmos os números 5 e 5', () => {
