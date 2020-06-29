@@ -12,7 +12,9 @@ class Calculator {
   }
 
   multiply(numbers) {
-    return null
+    return numbers.reduce((acc, number) => {
+      return acc *= number
+    }, numbers.shift())
   }
 
   divide(numbers) {
