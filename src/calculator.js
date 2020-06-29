@@ -18,7 +18,9 @@ class Calculator {
   }
 
   divide(numbers) {
-    return null
+    return numbers.reduce((acc, number) => {
+      return acc /= number
+    }, numbers.shift())
   }
 }
 
